@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Charity Platform - Volunteer My Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/volunteer_my_events.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">Volunteer and Charity Platform</a>
+            <div class="flex space-x-4">
+                <a href="/volunteer/dashboard" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="/volunteer/events" class="text-gray-600 hover:text-gray-800">Events</a>
+                <a href="/volunteer/my_events" class="text-gray-600 hover:text-gray-800">My Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 我的活动区域 -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">My Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="event-card bg-white p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-bold mb-2">Event 1</h3>
+                <p class="text-gray-600 mb-4">Date: 2025-05-01, Location: City A</p>
+                <p class="text-gray-600 mb-2">Status: Registered</p>
+                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+            </div>
+            <div class="event-card bg-white p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-bold mb-2">Event 2</h3>
+                <p class="text-gray-600 mb-4">Date: 2025-05-10, Location: City B</p>
+                <p class="text-gray-600 mb-2">Status: Completed</p>
+                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 text-center text-gray-600">
+            &copy; 2025 Volunteer and Charity Platform
+        </div>
+    </footer>
+</body>
+
+</html>

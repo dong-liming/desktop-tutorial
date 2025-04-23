@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Charity Platform - Volunteer Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/volunteer_events.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">Volunteer and Charity Platform</a>
+            <div class="flex space-x-4">
+                <a href="/volunteer/dashboard" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="/volunteer/events" class="text-gray-600 hover:text-gray-800">Events</a>
+                <a href="/volunteer/my_events" class="text-gray-600 hover:text-gray-800">My Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 活动区域 -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Volunteer Events</h2>
+        <form class="mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label for="cause" class="block text-gray-700 text-sm font-bold mb-2">Cause</label>
+                    <select id="cause" name="cause" class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option value="all">All</option>
+                        <option value="environment">Environment</option>
+                        <option value="education">Education</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="location" class="block text-gray-700 text-sm font-bold mb-2">Location</label>
+                    <input type="text" id="location" name="location" class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="date" class="block text-gray-700 text-sm font-bold mb-2">Date</label>
+                    <input type="date" id="date" name="date" class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mt-4">Filter</button>
+        </form>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="event-card p-6">
+                <h3 class="text-xl font-bold mb-2">Event 1</h3>
+                <p class="text-gray-600 mb-4">Date: 2025-05-01, Location: City A</p>
+                <a href="/volunteer/event_details" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+            <div class="event-card p-6">
+                <h3 class="text-xl font-bold mb-2">Event 2</h3>
+                <p class="text-gray-600 mb-4">Date: 2025-05-10, Location: City B</p>
+                <a href="/volunteer/event_details" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+            <div class="event-card p-6">
+                <h3 class="text-xl font-bold mb-2">Event 3</h3>
+                <p class="text-gray-600 mb-4">Date: 2025-05-15, Location: City C</p>
+                <a href="/volunteer/event_details" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 text-center text-gray-600">
+            &copy; 2025 Volunteer and Charity Platform
+        </div>
+    </footer>
+</body>
+
+</html>

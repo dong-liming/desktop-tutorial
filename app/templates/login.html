@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Charity Platform - Login/Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <!-- login.html 和 home.html 导航栏部分 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">Volunteer and Charity Platform</a>
+            <div class="flex space-x-4">
+                <a href="/" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="/login" class="text-gray-600 hover:text-gray-800">Login</a>
+                <a href="/register" class="text-gray-600 hover:text-gray-800">Register</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 登录/注册区域 -->
+    <section class="flex justify-center items-center min-h-screen">
+        <div class="login-container p-8 w-full max-w-md">
+            <h2 class="text-3xl font-bold text-center mb-8">Login/Sign Up</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+                    <input type="text" id="username" name="username" class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                    <input type="password" id="password" name="password" class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md w-full">Login</button>
+            </form>
+           <p class="text-gray-600 text-center mt-4">Don't have an account? <a href="/register" class="text-blue-500 hover:underline">Sign Up</a></p>
+            <p class="text-gray-600 text-center mt-2">Admin Login: <a href="#" class="text-blue-500 hover:underline">Admin Login Page</a></p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 text-center text-gray-600">
+            &copy; 2025 Volunteer and Charity Platform
+        </div>
+    </footer>
+</body>
+
+</html>

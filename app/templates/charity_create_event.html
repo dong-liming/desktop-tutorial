@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Charity Platform - Charity Create Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/charity_create_event.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">Volunteer and Charity Platform</a>
+            <div class="flex space-x-4">
+                <a href="/charity/dashboard" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="/charity/post_event" class="text-gray-600 hover:text-gray-800">Post Event</a>
+                <a href="/charity/manage_events" class="text-gray-600 hover:text-gray-800">Manage Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 创建活动区域 -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Create a New Event</h2>
+        <form>
+            <div class="mb-4">
+                <label for="event_name" class="block text-gray-700 text-sm font-bold mb-2">Event Name</label>
+                <input type="text" id="event_name" name="event_name"
+                       class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+            <div class="mb-4">
+                <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description</label>
+                <textarea id="description" name="description"
+                          class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                          required></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="date" class="block text-gray-700 text-sm font-bold mb-2">Date</label>
+                <input type="date" id="date" name="date"
+                       class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+            <div class="mb-4">
+                <label for="time" class="block text-gray-700 text-sm font-bold mb-2">Time</label>
+                <input type="text" id="time" name="time"
+                       class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+            <div class="mb-4">
+                <label for="location" class="block text-gray-700 text-sm font-bold mb-2">Location</label>
+                <input type="text" id="location" name="location"
+                       class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+            <div class="mb-4">
+                <label for="required_skills" class="block text-gray-700 text-sm font-bold mb-2">Required Skills</label>
+                <input type="text" id="required_skills" name="required_skills"
+                       class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md">Create
+                Event</button>
+        </form>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 text-center text-gray-600">
+            &copy; 2025 Volunteer and Charity Platform
+        </div>
+    </footer>
+</body>
+
+</html>    

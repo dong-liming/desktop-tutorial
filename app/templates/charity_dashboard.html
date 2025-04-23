@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Charity Platform - Charity Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/charity_dashboard.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">Volunteer and Charity Platform</a>
+            <div class="flex space-x-4">
+                <a href="/charity/dashboard" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="/charity/post_event" class="text-gray-600 hover:text-gray-800">Post Event</a>
+                <a href="/charity/manage_events" class="text-gray-600 hover:text-gray-800">Manage Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 仪表盘区域 -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Charity Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="dashboard-card p-8">
+                <h3 class="text-2xl font-bold mb-2">Active Events</h3>
+                <p class="text-4xl font-bold text-gray-800">3</p>
+            </div>
+            <div class="dashboard-card p-8">
+                <h3 class="text-2xl font-bold mb-2">Total Volunteers</h3>
+                <p class="text-4xl font-bold text-gray-800">20</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 text-center text-gray-600">
+            &copy; 2025 Volunteer and Charity Platform
+        </div>
+    </footer>
+</body>
+
+</html>    
